@@ -1,17 +1,17 @@
-import Layout from "../components/layout/layout"
+import Header from "../components/header/header"
 import React from "react"
 
-// class Home extends React.Component<OSProps, void> {
-// 	render() {
-// 		return (
-// 			<Layout>
-
-// 			</Layout>
-// 		)
-// 	}
-// }
 
 export default () => (
-	<Layout>
-	</Layout>
+    <div>
+        <Header/>
+        <div style={{ height: '5000px' }}>
+            hello
+        </div>
+        <style global jsx>{`
+      body {
+        margin: 0;
+      }
+    `}</style>
+    </div>
 );
