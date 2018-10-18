@@ -6,7 +6,7 @@ const contentStyle = {
 };
 
 const Content = (props) => (
-    <div style={contentStyle}>
+    <div style={ contentStyle }>
         {props.children}
     </div>
 );

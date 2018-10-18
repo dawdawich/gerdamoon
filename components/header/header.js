@@ -42,7 +42,7 @@ const Header = () => (
                     }
 
                     .headerItem {
-                        border: 3px solid;
+                        border: 1px solid;
                     }
 
                     .logo {
