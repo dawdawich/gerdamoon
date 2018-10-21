@@ -14,7 +14,7 @@ const Header = () => (
                     <div className='nav-item'>Оплата и доставка</div>
                     <div className='nav-item'>Контакты</div>
                 </div>
-                <div className='headerItem'>+38(093)015-06-34</div>
+                <div className='headerItem'>+38 (093) 015-06-34</div>
                 <style jsx>{`
                     .header {
                         background: #fff9fd;
@@ -23,6 +23,7 @@ const Header = () => (
                         flex-direction: row;
                         align-items: center;
                         border-top-style: solid;
+                        border-bottom: solid grey;
                         width: 100%;
                         height: 40px;
                         left: 0;
