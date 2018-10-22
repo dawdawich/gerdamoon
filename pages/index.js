@@ -31,12 +31,42 @@ export default () => (
             </div>
         </div>
         <div className='content' style={{background: '#eaeaea'}}>
-            <div>
-
+            <div style={{
+                border: 'solid', width: '70%', height: 300,
+                left: 0, right: 0, top: 0, bottom: 0, margin: 'auto',
+                display: 'flex', justifyContent: 'space-around', flexDirection: 'row', alignItems: 'center'
+            }}>
+                <div className='product-variant'>
+                    test
+                </div>
+                <div className='product-variant'>
+                    test
+                </div>
+                <div className='product-variant'>
+                    test
+                </div>
+            </div>
+        </div>
+        <div className='content' style={{background: '#C4C4C4', flexDirection: 'column'}}>
+            <div style={{
+                width: 'auto', height: 'auto', marginTop: 80,
+                textAlign: 'center', fontSize: 20, fontFamily: 'Courier', fontWeight: 'bold'
+            }}>
+                Оплата
+            </div>
+            <div style={{width: '50%', margin: 'auto'}}>
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velitminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
             </div>
         </div>
         <style jsx>{`
-        .content {
+
+            .product-variant {
+                width: 220px;
+                height: 220px;
+                border: solid;
+            }
+
+            .content {
                 display: flex;
                 height: 400px;
                 width: 100%;
@@ -50,7 +80,7 @@ export default () => (
                 -ms-user-select: none; /* Internet Explorer/Edge */
                  user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
-}
+            }
         `}</style>
         <style global jsx>{`
       body {
