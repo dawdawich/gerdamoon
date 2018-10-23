@@ -1,4 +1,5 @@
 import Header from "../components/header/header"
+import Footer from "../components/footer/footer"
 
 export default () => (
     <div>
@@ -58,6 +59,18 @@ export default () => (
                 minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velitminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
             </div>
         </div>
+        <div className='content' style={{background: '#dddddd', flexDirection: 'column'}}>
+            <div style={{
+                width: 'auto', height: 'auto', marginTop: 80,
+                textAlign: 'center', fontSize: 20, fontFamily: 'Courier', fontWeight: 'bold'
+            }}>
+                Доставка
+            </div>
+            <div style={{width: '50%', margin: 'auto'}}>
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velitminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            </div>
+        </div>
+        <Footer />
         <style jsx>{`
 
             .product-variant {
