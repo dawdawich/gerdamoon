@@ -1,5 +1,6 @@
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
+import Button from "../components/button/Button"
 
 export default () => (
     <div>
@@ -7,36 +8,20 @@ export default () => (
         <div className='content' style={{background: '#ffffff'}}>
             <div style={{width: '42%'}}>
                 <div style={{marginLeft: '20%'}}>
-                    <div style={{
-                        fontSize: 40,
-                        fontFamily: 'Courier', fontWeight: 'bold',
-                        marginTop: '10%',
-                        width: 220
-                    }}>
+                    <div className='content-header-header'>
                         THE GERDAMOON STORY
                     </div>
-                    <div className='noselect' style={{
-                        width: 110, height: 40, marginTop: 20, background: '#000000', borderRadius: 5,
-                        color: 'white', fontSize: 14, display: 'flex', alignItems: 'center',
-                        justifyContent: 'space-around', cursor: 'pointer'
-                    }}>
+                    <Button className='dark'>
                         Read more
-                    </div>
+                    </Button>
                 </div>
             </div>
             <div style={{width: '58%', overflow: 'hidden'}}>
-                <img src='../static/nitki.jpg' style={{
-                    display: 'block', position: 'relative',
-                    left: '-50%', top: '-50%'
-                }}/>
+                <img src='../static/nitki.jpg' className='content-header-image'/>
             </div>
         </div>
         <div className='content' style={{background: '#eaeaea'}}>
-            <div style={{
-                border: 'solid', width: '70%', height: 300,
-                left: 0, right: 0, top: 0, bottom: 0, margin: 'auto',
-                display: 'flex', justifyContent: 'space-around', flexDirection: 'row', alignItems: 'center'
-            }}>
+            <div className='menu-table'>
                 <div className='product-variant'>
                     test
                 </div>
@@ -49,10 +34,7 @@ export default () => (
             </div>
         </div>
         <div className='content' style={{background: '#C4C4C4', flexDirection: 'column'}}>
-            <div style={{
-                width: 'auto', height: 'auto', marginTop: 80,
-                textAlign: 'center', fontSize: 20, fontFamily: 'Courier', fontWeight: 'bold'
-            }}>
+            <div className='content-text-column-header'>
                 Оплата
             </div>
             <div style={{width: '50%', margin: 'auto'}}>
@@ -60,10 +42,7 @@ export default () => (
             </div>
         </div>
         <div className='content' style={{background: '#dddddd', flexDirection: 'column'}}>
-            <div style={{
-                width: 'auto', height: 'auto', marginTop: 80,
-                textAlign: 'center', fontSize: 20, fontFamily: 'Courier', fontWeight: 'bold'
-            }}>
+            <div className='content-text-column-header'>
                 Доставка
             </div>
             <div style={{width: '50%', margin: 'auto'}}>
@@ -79,10 +58,50 @@ export default () => (
                 border: solid;
             }
 
+            .menu-table {
+                border: solid;
+                width: 70%;
+                height: 300px;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                align-items: center;
+            }
+
             .content {
                 display: flex;
                 height: 400px;
                 width: 100%;
+            }
+
+            .content-header-image {
+                display: block;
+                position: relative;
+                left: -50%;
+                top: -50%;
+            }
+
+            .content-header-header {
+                font-size: 40px;
+                font-family: 'Courier';
+                font-weight: bold;
+                margin-top: 10%;
+                width: 220px;
+            }
+
+            .content-text-column-header {
+                width: auto;
+                height: auto;
+                margin-top: 80px;
+                text-align: center;
+                font-size: 20px;
+                font-family: 'Courier';
+                font-weight: bold;
             }
 
             .noselect {
