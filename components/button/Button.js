@@ -14,13 +14,13 @@ const Button = (props) => (
             }
 
             .white {
-                color: "black";
-                background-color: "white";
+                color: #000;
+                background-color: #fff;
             }
 
             .dark {
-                color: "white";
-                background-color: "black";
+                color: #fff;
+                background-color: #000;
             }
 
         `}</style>
