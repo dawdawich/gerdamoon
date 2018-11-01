@@ -69,14 +69,19 @@ const Footer = () => (
                         .dropbtn {
                             height: 40px;
                             font-size: 16px;
-                            border: 1px solid;
-
+                            background-color: #eaeaea;
+                            border-radius: 5px;
                         }
 
                         .dropbtn a {
                             text-decoration: none;
-                            width: 100px;
-                            padding-top: 10px;
+                            width: 120px;
+                            display: inline-block;
+                            padding: 12px 0;
+                        }
+
+                        .dropbtn img {
+                            padding: 0px 10px;
                         }
 
                         .dropup {
@@ -93,15 +98,19 @@ const Footer = () => (
                             transition: visibility 0s, opacity 0.1s linear;
                             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                             border-radius: 5px;
-                            width: 100px;
+                            width: 120px;
                             z-index: 1;
                         }
 
                         .dropup-content a {
                             color: black;
-                            padding: 12px 16px;
+                            padding: 12px 0;
                             text-decoration: none;
                             display: block;
+                        }
+
+                        .dropup-content img {
+                            padding: 0 10px;
                         }
 
                         .dropup-content a:hover {
