@@ -6,7 +6,7 @@ export default () => (
         <Layout>
             <div className='content' style={{background: '#ffffff'}}>
                 <div style={{width: '42%'}}>
-                    <div style={{marginLeft: '20%'}}>
+                    <div style={{marginLeft: '50%'}}>
                         <div className='content-header-header'>
                             THE GERDAMOON STORY
                         </div>
