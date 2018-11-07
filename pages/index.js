@@ -1,55 +1,60 @@
-import Header from "../components/header/header"
-import Footer from "../components/footer/footer"
 import Button from "../components/button/Button"
+import Layout from "../components/layout/layout";
 
 export default () => (
     <div>
-        <Header/>
-        <div className='content' style={{background: '#ffffff'}}>
-            <div style={{width: '42%'}}>
-                <div style={{marginLeft: '20%'}}>
-                    <div className='content-header-header'>
-                        THE GERDAMOON STORY
+        <Layout>
+            <div className='content' style={{background: '#ffffff'}}>
+                <div style={{width: '42%'}}>
+                    <div style={{marginLeft: '20%'}}>
+                        <div className='content-header-header'>
+                            THE GERDAMOON STORY
+                        </div>
+                        <Button className='dark'>
+                            Read more
+                        </Button>
                     </div>
-                    <Button className='dark'>
-                        Read more
-                    </Button>
+                </div>
+                <div style={{width: '58%', overflow: 'hidden'}}>
+                    <img src='../static/nitki.jpg' className='content-header-image'/>
                 </div>
             </div>
-            <div style={{width: '58%', overflow: 'hidden'}}>
-                <img src='../static/nitki.jpg' className='content-header-image'/>
-            </div>
-        </div>
-        <div className='content' style={{background: '#eaeaea'}}>
-            <div className='menu-table'>
-                <div className='product-variant'>
-                    test
-                </div>
-                <div className='product-variant'>
-                    test
-                </div>
-                <div className='product-variant'>
-                    test
+            <div className='content' style={{background: '#eaeaea'}}>
+                <div className='menu-table'>
+                    <div className='product-variant'>
+                        test
+                    </div>
+                    <div className='product-variant'>
+                        test
+                    </div>
+                    <div className='product-variant'>
+                        test
+                    </div>
                 </div>
             </div>
-        </div>
-        <div className='content' style={{background: '#C4C4C4', flexDirection: 'column'}}>
-            <div className='content-text-column-header'>
-                Оплата
+            <div className='content' style={{background: '#C4C4C4', flexDirection: 'column'}}>
+                <div className='content-text-column-header'>
+                    Оплата
+                </div>
+                <div style={{width: '50%', margin: 'auto'}}>
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velitminim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit
+                </div>
             </div>
-            <div style={{width: '50%', margin: 'auto'}}>
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velitminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            <div className='content' style={{background: '#dddddd', flexDirection: 'column'}}>
+                <div className='content-text-column-header'>
+                    Доставка
+                </div>
+                <div style={{width: '50%', margin: 'auto'}}>
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velitminim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit
+                </div>
             </div>
-        </div>
-        <div className='content' style={{background: '#dddddd', flexDirection: 'column'}}>
-            <div className='content-text-column-header'>
-                Доставка
-            </div>
-            <div style={{width: '50%', margin: 'auto'}}>
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velitminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            </div>
-        </div>
-        <Footer />
+        </Layout>
         <style jsx>{`
 
             .product-variant {

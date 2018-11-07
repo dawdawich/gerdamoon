@@ -33,7 +33,7 @@ const Footer = () => (
         <div className='down-footer'>
             <div className='dropup'>
                 <div className="dropbtn">
-                    <a href="#nl">
+                    <a href="#nl" style={{textDecoration: "none", color: "#000"}}>
                         <img src="http://i65.tinypic.com/2d0kyno.png"/>Netherlands
                     </a>
                 </div>
@@ -49,10 +49,21 @@ const Footer = () => (
                     </a>
                 </div>
             </div>
-            <div style={{width: 50, height: 50, background: 'blue'}}></div>
+            <div className="socials">
+                <a href="#instagram">
+                    <img src="../../static/instagram.svg"/>
+                </a>
+                <a href="#facebook">
+                    <img src="../../static/facebook.svg"/>
+                </a>
+            </div>
             <style jsx>
                 {
                     `
+
+                        .socials > * {
+                            margin: 0 5px;
+                        }
 
                         .down-footer {
                             height: 50px;
@@ -75,6 +86,7 @@ const Footer = () => (
 
                         .dropbtn a {
                             text-decoration: none;
+                            font-wight: bold;
                             width: 120px;
                             display: inline-block;
                             padding: 12px 0;
